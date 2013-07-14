@@ -3,7 +3,9 @@ title: "Bit of Analysis: Honor Harrington"
 link: http://bbs.stardestroyer.net/viewtopic.php?f=4&t=158873
 date: 2013-07-13 22:07
 comments: true
-tags: science-fiction, link
+tags: 
+  - science-fiction
+  - link
 ---
 
 Ahriman238 reads excerpts of *On Basilisk Station* and includes some of his own commentary,

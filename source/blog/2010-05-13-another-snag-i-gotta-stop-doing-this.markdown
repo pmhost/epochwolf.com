@@ -2,7 +2,9 @@
 title: "Another snag! (I gotta stop doing this)"
 date: 2010-05-13 13:23
 comments: true
-tags: irl, singleforest
+tags: 
+  - irl
+  - singleforest
 alias: [another-snag-i-gotta-stop-doing-this]
 ---
 Well, I haven't done any programming related to singleforest.com for about two weeks. I've been working pretty hard on my final project. I just finished the presentation with my group and the professor said it was good enough to pass. I should be officially graduated in a week or two. 
