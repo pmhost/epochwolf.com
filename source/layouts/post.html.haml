@@ -1,0 +1,10 @@
+-wrap_layout :layout do
+  %article{class: current_page.data.link ? "blog link" : "blog"}
+    %header
+      %h1=blog_link current_page
+      %p.meta
+        =dt current_page.date
+        =link_to "&infin;", current_page
+        ="&sdot;"
+        %span.tag-list=tag_list current_page.data.tags
+    =yield

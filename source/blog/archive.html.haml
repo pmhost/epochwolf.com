@@ -1,0 +1,22 @@
+---
+title: Archive
+---
+
+%h1 The Archive
+
+%ul.unstyled
+  -blog("main").articles.group_by{|a| a.date.year }.each do |year, articles|
+    %li
+      %strong=year
+    -articles.each do |article|
+      %li
+      .title
+        %span.datetime-short=article.date.strftime("%b %d")
+        =link_to article.title, article
+        -if article.data.layout == 'nsfw'
+          &dagger;
+        -if tag_list article.tags
+          &mdash;
+          =tag_list article.tags, "/blog"
+
+%p &dagger; Post contains mature content.

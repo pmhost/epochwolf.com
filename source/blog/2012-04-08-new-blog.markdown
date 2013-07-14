@@ -1,0 +1,7 @@
+---
+title: "New blog."
+date: 2012-04-08 20:48
+comments: true
+tags: irl
+---
+Working on moving my blog from posterous to my own hosting. 

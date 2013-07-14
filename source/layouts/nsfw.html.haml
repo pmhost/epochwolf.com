@@ -1,0 +1,12 @@
+-wrap_layout :layout do
+  %article.writing
+    %header
+      %h1=link_to current_page.data.title, current_page
+    .nsfw-header
+      %p 
+        This story contains depictions of #{current_page.data.nsfw}
+      %p 
+        If you don't wish to continue, just hit the back button. Otherwise, 
+        #{link_to "read the story", '#', "data-reveal" => '.nsfw', "data-hide" => ".nsfw-header"}.
+
+    .nsfw=yield

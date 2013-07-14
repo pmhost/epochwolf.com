@@ -1,0 +1,18 @@
+---
+title: Writing
+---
+%p Here is some of the writing I've done over the years. 
+%hr
+%ul.unstyled
+  -blog("writing").articles.each do |article|
+    %li
+    .title
+      =blog_link article
+      -if article.data.layout == "nsfw"
+        %span{title: "Story contains mature content."} &dagger;
+      -if tag_list article.tags
+        &mdash;
+        =tag_list article.tags, "/writing"
+        
+%p &dagger; Story contains mature content.
+          
