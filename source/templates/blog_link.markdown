@@ -1,14 +1,9 @@
 ---
-title: "{{title}}"
-date: {{date}}
-layout: nsfw
-tags: furry, sf, fantasy
+title: "TITLE_GOES_HERE"
+link: URL_GOES_HERE
+date: DATE_GOES_HERE
+tags: 
+  - link
 ---
 
-<div class="authors-note">
-Author's Note Goes Here
-</div>
-
-* * * 
-
-Story Goes Here
+POST_GOES_HERE

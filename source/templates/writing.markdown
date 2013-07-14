@@ -1,14 +1,17 @@
 ---
-title: "{{title}}"
-date: {{date}}
+title: "TITLE_GOES_HERE"
+date: DATE_GOES_HERE
 layout: nsfw
-tags: furry, sf, fantasy
+tags: 
+  - furry
+  - sf
+  - fantasy
 ---
 
 <div class="authors-note">
-Author's Note Goes Here
+AUTHORS_NOTE_GOES_HERE
 </div>
 
 * * * 
 
-Story Goes Here
+STORY_GOES_HERE
