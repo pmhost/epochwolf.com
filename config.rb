@@ -92,7 +92,7 @@ ignore 'templates/*'
 ready do
   sitemap.resources.select{|p| p.data.alias }.each do |page|
     page.data.alias.each do |old_url|
-      proxy "/#{old_url}", 'templates/redirect.html', locals:{new_url: page.url}
+      proxy "/#{old_url}/index.html", 'templates/redirect.html', locals:{new_url: page.url}
     end
   end
 end
