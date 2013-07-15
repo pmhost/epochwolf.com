@@ -143,8 +143,20 @@ set :markdown_engine, :kramdown
 # parse_block_html - enables markdown inside html, use markdown=0 on an html tag to disable.
 set :markdown, fenced_code_blocks: true, parse_block_html: true
 
+
+configure :development do
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
+
 # Build-specific configuration
 configure :build do
+
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-12404363-1'
+  end
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
   

@@ -74,6 +74,8 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
+    middleman-google-analytics (0.0.1)
+      middleman-core (>= 3.0.6)
     middleman-sprockets (3.1.2)
       middleman-core (>= 3.0.14)
       middleman-more (>= 3.0.14)
@@ -120,5 +122,6 @@ DEPENDENCIES
   kramdown
   middleman!
   middleman-blog!
+  middleman-google-analytics
   middleman-syntax!
   nokogiri
