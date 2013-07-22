@@ -2,6 +2,9 @@
 title: "New blog."
 date: 2012-04-08 20:48
 comments: true
-tags: irl
+tags: 
+  - irl
+  - new-blog
 ---
+
 Working on moving my blog from posterous to my own hosting. 

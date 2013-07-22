@@ -1,0 +1,19 @@
+---
+title: New Blog using Middleman
+date: 2013-07-20
+tags:
+  - programming
+  - new-blog
+---
+
+Last week I completely rewrote the backend for my blog. It's still static files. I got rid of [octopress](http://octopress.org/) and switched to [middleman](http://middlemanapp.com/) instead. 
+
+The rewrite allowed me to split my writing and my blog articles into separate sections. I've been wanting to do this for a long time but octopress and jekyll don't support multiple blogs or splitting a single blog into multiple sections. However, middleman has an undocumented and unfinished multiblog feature in the master branch. With a little effort I got it to work. I'll write something up about that later. The source for the blog is [available on github](https://github.com/epochwolf/epochwolf.com) if you want to try to figure out what I did.  
+
+I wish I could take complete credit for the snazzy new theme but I started with the css from [macro.org](http://macro.org) as a base and the cute little wolf in the header is a stock image I paid for. The majority of the css is written by me, I just can't claim complete credit for it. 
+
+<!--
+If I change my blog again, here's what it looks like as of this post. 
+
+![Screenshot of blog](/blog/2013/07/20/updated-blog/blog-full.png)
+-->
