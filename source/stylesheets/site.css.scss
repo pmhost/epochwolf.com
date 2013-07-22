@@ -112,6 +112,14 @@ blockquote {
 
 img, figure {
   max-width: 100%; 
+  &.left{
+    float: left;
+    padding-right: 0.5em;
+  }
+  &.right{
+    float: right;
+    padding-left: 0.5em;
+  }
 }
 
 li {
@@ -303,6 +311,13 @@ div.nsfw {
     }
     h2{
       display: none;
+    }
+  }
+
+  img, figure{
+    &.left, &.right{
+      float: none;
+      padding: 0;
     }
   }
 }

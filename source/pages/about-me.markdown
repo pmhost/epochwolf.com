@@ -3,14 +3,39 @@ title: About Me
 date: 2013-07-09
 ---
 
-I'm a Ruby on Rails developer in Bothell, WA. Originally born in Chicago, IL and raised in Green Bay, WI.
+<img src="/pages/about-me/me.jpg" height="320" width="240" class="right pad-left" alt="MySpace Shot">
 
-I'm active in the [Seattle Rails Group](http://www.meetup.com/The-Seattle-Ruby-on-Rails-Developers-Meetup-Group/), which you can find me at Café Racer most Monday nights. You can also find me virtually on irc.freenode.net. I hang out in the #rubyonrails chatroom. 
+I'm a Ruby on Rails developer and hobbyist writer in Bothell, WA. 
 
-In high school and college I was interested in writing science fiction and fantasy. But, I'm like the fisherman you see with all of the fancy poles and the fancy boat yet never fishes. I spend a lot of time thinking about writing stories but I don't do a lot of writing. The bit of stuff I do have, I'll post here. I'm sorry it's not more. 
+My day job is writing insurance software for Vertafore. At night, I read a book, watch a documentary, or work on one of my programming or writing projects. Tuesday nights, I head to a cafe north of Seattle and hang out with one of the many writing groups in the area. 
 
-## Contact Information
+Online, I hang out on irc.freenode.net in the #rubyonrails channel and on [twitter](http://twitter.com/epochwolf).
 
-Feel free to email me at [me@epochwolf.com](mailto:me@epochwolf.com). I get email on my phone so I should get back to you within 24 hours if not in a few minutes. (Assuming you haven't been filtered into oblivion. Spammers are aggressively blocked.)
+# Programming
 
-Twitter is not a good way to contact me. I'll go days without checking it. :)
+[This Blog](https://github.com/epochwolf/epochwolf.com)
+: Yup, I wrote this blog myself using [middleman](http://middlemanapp.com), a static site generator. 
+Currently hosted on a linode vps.
+
+[LitSocial](https://github.com/epochwolf/litsocial)
+: A website for writers to share their stories and people to read them. 
+Not finished yet. It's been a work in progress since [2010](https://github.com/epochwolf/singleforest-old). 
+It's a hobby project I rebuild every year or so as I learn more. 
+
+[Pious Plum](https://github.com/epochwolf/pious-plum)
+: IRC Bot written in Node.JS. I built it to learn how to use Node.JS. 
+I found Node.JS much better suited for building bots than ruby or lua. 
+
+[GodGamePurple](https://github.com/epochwolf/godgamepurple)
+: Sabot rewritten in Ruby. 
+
+[Sabot](https://github.com/epochwolf/sabot)
+: IRC Bot written in pure lua. It has event based architecture and plug ins
+
+# Writing
+
+Most of my writing is for my own enjoyment. I don't have many stories longer than 2,000 words. A few of them are hosted here. 
+
+# Contact Information
+
+Feel free to email me at <me@epochwolf.com>.
