@@ -15,8 +15,10 @@ The problem with capistrano is that by default the :repository variable only pat
 
 The solution:
 
-    set :repository, "file:///srv/git/repository.git"
-    set :local_repository, "file://."
+~~~ruby
+set :repository, "file:///srv/git/repository.git"
+set :local_repository, "file://."
+~~~
 
 The above works because setting undocumented variable :local_repository tells capistrano that :repository is a location on the app server. Suddenly, I'm able to deploy using export instead of copy. I hope I saved someone else hours of searching to figure out how to do this.
 
