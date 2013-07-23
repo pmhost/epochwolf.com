@@ -9,36 +9,46 @@ This is a quick reference for how to use the BlueCloth 2.0 gem. I couldn't find 
 
 Require the gem in a generic ruby project.
 
-    require 'rubygems'  #needed to load gems.
-    gem 'bluecloth', '>= 2.0.0'  #need to specify we want the 2.0 version, not the 1.0 version.
-    require 'bluecloth'
+~~~ruby
+require 'rubygems'  #needed to load gems.
+gem 'bluecloth', '>= 2.0.0'  #need to specify we want the 2.0 version, not the 1.0 version.
+require 'bluecloth'
+~~~
   
 If you are using Ruby on Rails just add the line below to your environment file.
 
-    config.gem 'bluecloth', :version => '>= 2.0.0' 
+~~~ruby
+config.gem 'bluecloth', :version => '>= 2.0.0' 
+~~~
 
 Once you have the gem included you can make a wrapper function
 
-    def markdown_parse(str)
-      bc = BlueCloth.new(str)
-      bc.to_html
-    end
+~~~ruby
+def markdown_parse(str)
+  bc = BlueCloth.new(str)
+  bc.to_html
+end
+~~~
   
 or a one-liner
 
-    html = BlueCloth.new(str).to_html()
+~~~ruby
+html = BlueCloth.new(str).to_html()
+~~~
   
 If you want to get more complicated and change the default options.
 
-    def markdown_parse(str, options={})
-      options = {
-        :escape_html => true,
-        :strict_mode => false,
-      }.update(options)
-      bc = BlueCloth.new(str, options)
-      bc.to_html
-    end
-  
+~~~ruby
+def markdown_parse(str, options={})
+  options = {
+    :escape_html => true,
+    :strict_mode => false,
+  }.update(options)
+  bc = BlueCloth.new(str, options)
+  bc.to_html
+end
+~~~
+
 A full list of options supported by BlueCloth 2.0.5 is below. Be sure to read the notes, some of them are important. You need to be using an html sanitizer with BlueCloth (such as rgrove's sanitize) if you allow user-submitted html to be used with markdown.
 
 ##:remove_links => false
@@ -59,8 +69,10 @@ Enable smartypants with markdown
 
 Allow url syntax to create named anchors using id: and styled span tags using class:. Unsafe, allows duplicate ids in h tags. Html spec requires ids to be unique.
 
-    [just as he said](id:foo) converts to <a id="foo">just as he said</a> 
-    [just as he said](class:foo) converts to <span class="foo">just as he said</span>
+~~~html
+[just as he said](id:foo) converts to <a id="foo">just as he said</a> 
+[just as he said](class:foo) converts to <span class="foo">just as he said</span>
+~~~
 
 ##:pandoc_headers => false
 
@@ -68,34 +80,39 @@ Enable Discount extension named "pandoc_headers
 
 This the unit test for this feature, I've never used it myself.
 
-    it "correctly applies the :pandoc_headers option" do
-      input = "% title\n% author1, author2\n% date\n\nStuff."
-      bc = BlueCloth.new( input, :pandoc_headers => true )
-      bc.header.should == {
-        :title => 'title',
-        :author => 'author1, author2',
-        :date => 'date'
-      }
-      bc.to_html.should == '<p>Stuff.</p>'
-    end
-
+~~~ruby
+it "correctly applies the :pandoc_headers option" do
+  input = "% title\n% author1, author2\n% date\n\nStuff."
+  bc = BlueCloth.new( input, :pandoc_headers => true )
+  bc.header.should == {
+    :title => 'title',
+    :author => 'author1, author2',
+    :date => 'date'
+  }
+  bc.to_html.should == '<p>Stuff.</p>'
+end
+~~~
 
 ##:header_labels => false
 
 Auto generate ids for h tags. Unsafe, allows duplicate ids in h tags. Html spec requires ids to be unique.
 
+~~~markdown
     # A header
     Some stuff
     
     ## A header
     More stuff.
-    is converted to
-    
+~~~
+
+is converted to
+
+~~~html
     <h1 id="A+header">A header</h1>
     <p>Some stuff</p>
     <h2 id="A+header">A header</h2>
     <p>More stuff.</p>
-
+~~~
 
 ##:escape_html => false
 
