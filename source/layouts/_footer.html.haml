@@ -1,6 +1,15 @@
 #site-footer-wrapper
   #site-footer
+    %nav
+      =link_to "Blog", '/'
+      %span.dot="&loz;"
+      =link_to "Wiki", 'http://ew.vc'
+      %span.dot="&loz;"
+      =link_to "Paste", 'http://sp.ew.vc'
+      %span.dot="&loz;"
+      =link_to "Twitter", "http://twitter.com/epochwolf"
+      %span.dot="&loz;"
+      =link_to "Github", "https://github.com/epochwolf"
     %p &copy; 2010 - #{Time.now.year} EpochWolf 
-    %p See #{link_to "my twitter", "http://twitter.com/epochwolf"} feed or #{link_to "my github", "https://github.com/epochwolf"}.
 
 =google_analytics_tag
