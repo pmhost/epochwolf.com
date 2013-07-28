@@ -1,13 +1,15 @@
 #site-header-wrapper
   #site-header
     #site-header-title
-      %h1=link_to "EpochWolf's Blog", "/"
-      %h2 A wolf doing tricks. Like making an awesome blog.
+      %h1=link_to "EpochWolf", "/"
+      %h2 A wolf doing tricks. Like making an awesome website.
   %nav
-    =link_to "Blog", '/'
+    =link_to "Home", '/'
+    %span.dot="&loz;"
+    =link_to "Blog", '/blog/'
     %span.dot="&loz;"
     =link_to "Archive", '/blog/archive/'
     %span.dot="&loz;"
-    =link_to "Writing", '/writing/'
+    =link_to "Projects", '/projects/'
     %span.dot="&loz;"
-    =link_to "About Me", '/pages/about-me/'
+    =link_to "Writing", '/writing/'

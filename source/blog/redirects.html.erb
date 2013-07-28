@@ -2,7 +2,7 @@
 
 <% code("ruby") do %>
 {
-<% blog("main").articles.select{|a| a.data.alias }.each do |article| %>
+<% blog("blog").articles.select{|a| a.data.alias }.each do |article| %>
   <%=article.data.alias.first.inspect %> => <%=article.url.inspect %>,
 <% end %>
 }

@@ -68,6 +68,7 @@ body{
   }
 }
 #site-footer{
+  clear: both;
   font-size: 0.9em;
   width: $reg_width;
   margin: auto; 
@@ -123,7 +124,7 @@ img, figure {
 }
 
 li {
-    margin: 1em 0;
+    margin: .5em 0;
 }
 
 a, a:active, a:visited {
@@ -244,6 +245,10 @@ ul.unstyled, ol.unstyled {
   margin-left: 0;
   list-style: none;
 } 
+
+ul.tight li{
+  margin: 0.2em 0;
+}
 
 .datetime{
   color: #777;
