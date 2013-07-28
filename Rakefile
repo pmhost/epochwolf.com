@@ -1,4 +1,4 @@
-task :default => [:watch]
+task :default => [:preview]
 
 def port_open?(ip, port, seconds=1)
   require 'socket'
