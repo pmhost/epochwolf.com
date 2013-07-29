@@ -2,6 +2,9 @@
 title: Projects
 layout: page
 ---
+
+<img src="/images/drunk-mouse.jpg" height="215" width="150" class="right pad-left hide-phone" alt="Plush mouse diving into my wine" title="Bad mouse!">
+
 A selection of programming projects I've done through out the years. 
 
 [This Website](https://github.com/epochwolf/epochwolf.com)

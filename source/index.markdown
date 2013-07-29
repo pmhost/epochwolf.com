@@ -3,7 +3,7 @@ title: "About EpochWolf"
 layout: page
 ---
 
-<img src="/images/me.jpg" height="320" width="240" class="right pad-left" alt="MySpace Shot">
+<img src="/images/washington-pass.jpg" height="370" width="300" class="right pad-left" alt="Me sitting on a rock wall at washington pass." title="Taken in Washington Pass. It's really pretty in summer.">
 
 I'm a full-stack Ruby on Rails developer and hobbyist writer in Bothell, WA.
 
