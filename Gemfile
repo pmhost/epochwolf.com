@@ -1,4 +1,4 @@
-source :rubygems
+source "https://rubygems.org"
 
 # Using master branch so I can make use of multiblog. 
 #gem "middleman", "~> 3.1.3"
