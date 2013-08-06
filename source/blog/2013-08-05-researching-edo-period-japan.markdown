@@ -5,6 +5,7 @@ tags:
   - books
   - writing
   - affiliate-links
+hours_to_write: 2
 ---
 
 I've been working on a fantasy story set in Japan in the 1700s, known as Edo Period Japan. 
