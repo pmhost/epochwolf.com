@@ -120,7 +120,8 @@ namespace :new do
     date  = Date.parse(prompt("Date for post", Date.today.strftime("%Y-%m-%d")))
     tags  = prompt "Tags for post (comma separated)"
 
-    filename = create_file "source/blog", title, date: date, tags: tags
+    filename = create_file "source/blog", title, date: date, tags: tags, hours_to_write: 0
+    `subl #{filename}`
     puts "New post at #{filename}"
   end
 
@@ -130,7 +131,9 @@ namespace :new do
     date  = Date.parse(prompt "Date for post", Date.today.strftime("%Y-%m-%d"))
     tags  = prompt "Tags for post (comma separated)"
 
-    create_file "source/blog", link: link, date: date, tags: tags
+    filename = create_file "source/blog", title, link: link, date: date, tags: tags, hours_to_write: 0
+    `subl #{filename}`
+    puts "New post at #{filename}"
   end
 
   task :story do 
@@ -138,6 +141,8 @@ namespace :new do
     date  = Date.parse(prompt "Date for story", Date.today.strftime("%Y-%m-%d"))
     tags  = prompt "Tags for story (comma separated)"
 
-    create_file "source/writing", date: date, tags: tags
+    filename = create_file "source/writing", title, date: date, tags: tags
+    `subl #{filename}`
+    puts "New post at #{filename}"
   end
 end
