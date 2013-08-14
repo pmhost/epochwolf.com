@@ -11,7 +11,7 @@ I'm a huge fan of science fiction and fantasy. I'm always reading something in o
 
 # My hobbies
 
-* Reading books ([Recommend Reading](/pages/recommended-reading))
+* Reading books ([Recommended Reading](/pages/recommended-reading))
 * Writing short fiction
 * Doing research for my writing
 * Watching documentaries
