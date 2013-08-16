@@ -1,3 +1,9 @@
+:ruby
+  #github_blob_url = "https://github.com/epochwolf/epochwolf.com/blob/master"
+  github_blob_url = "https://raw.github.com/epochwolf/epochwolf.com/master"
+  project_relative_path = current_page.source_file.gsub(Dir.pwd, "")
+  source_url = github_blob_url + project_relative_path
+
 #site-footer-wrapper
   #site-footer
     %nav
@@ -15,5 +21,7 @@
       Corrections and comments can be emailed to #{link_to "blog@epochwolf.com"}
       %br
       Donations are #{link_to "grudgingly accepted", "/donate/"}. 
+    %p 
+      #{link_to "Source for this page", source_url}
 
 =google_analytics_tag
