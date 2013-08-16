@@ -1,0 +1,14 @@
+---
+title: Pages
+---
+
+:ruby
+  pages = sitemap.resources.select{|p| p.url =~ %r{^/pages/} }.sort_by{|p| p.data.title }
+  pages.delete current_page
+
+%ul.unstyled
+  -pages.each do |page|
+    %li
+      =link_to page.data.title, page.url
+      &mdash;
+      %span.datetime=dt(page.data.updated_at || page.data.date)
