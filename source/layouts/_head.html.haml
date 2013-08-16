@@ -4,13 +4,14 @@
 %meta{name: "author",   content: "epochwolf"}
 %meta{name: "viewport", content:"width=device-width, initial-scale=1.0"}
 
-/%link{href: "/stylesheets/bootstrap.css", rel: "stylesheet", media: "screen"}
 %link{href: "/stylesheets/site.css", rel: "stylesheet", media: "screen"}
 %link{href: "/stylesheets/highlighter.css", rel: "stylesheet", media: "screen"}
 
-%script{src: "/javascripts/jquery.min.js"}
-/%script{src: "/javascripts/jquery.js"}
-/%script{src: "/javascripts/bootstrap.min.js"}
+-if build?
+  %script{src: "/javascripts/jquery.min.js"}
+-else
+  %script{src: "/javascripts/jquery.js"}
+
 %script{src: "/javascripts/site.js"}
 
 %link{href: "/favicon.ico", rel: "icon"}
