@@ -8,7 +8,7 @@ per_page: 10
 -page_articles.each_with_index do |article, i|
   %figure.hortizonal{id: article.data.photo}
     =link_to article do 
-      =thumbnail "/images/gallery/#{article.data.photo}", :tiny, width: "200"
+      =thumbnail "/images/gallery/#{article.data.photo}", :small, width: "200"
     %figcaption
       %h3=article.title
       =article.body

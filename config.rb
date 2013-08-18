@@ -150,7 +150,7 @@ activate :directory_indexes
 # Code Highlighting
 activate :syntax, line_numbers: true
 require "middleman-thumbnailer"
-activate :thumbnailer, dimensions: { tiny: '200x', small: '450x', large: '1024x'}, include_data_thumbnails: true
+activate :thumbnailer, dimensions: { small: '400x', medium:'900x', large: '2048x'}
 
 # Fix whitespace issues with pre tags :)
 set :haml, { ugly: true }
