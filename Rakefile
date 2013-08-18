@@ -36,7 +36,8 @@ task :deploy do
   print "Deploying website...\r"
   $stdout.flush
 
-  txt = `rsync --recursive --links --verbose --rsh=ssh --delete build/ kazan:/srv/blog/`
+  # perms=off and chmod= are used to fix permission issues I encountered uploading images.
+  txt = `rsync --recursive --links --verbose --perms=off --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r --rsh=ssh --delete build/ kazan:/srv/blog/`
 
   if $?.success?
     puts "Deploying website [OK]"
