@@ -1,0 +1,11 @@
+!!! 5
+%html{lang: "en"}
+  %head
+    =partial "layouts/head"
+  %body#fullscreen
+    %header
+      #site-header-wrapper
+        #site-header
+          #site-header-title
+            %h1=link_to "EpochWolf", "/"
+    %section=yield

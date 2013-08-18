@@ -1,0 +1,21 @@
+---
+title: Photos
+blog: photos
+pageable: true
+per_page: 5
+---
+-page_articles.each_with_index do |article, i|
+  %figure
+    =link_to article do 
+      =thumbnail "/images/gallery/#{article.data.photo}", :small, :width => "450"
+    %figcaption=article.body
+-if paginate
+  .pager
+    -if prev_page
+      %span.prev
+        &laquo;
+        =link_to 'Newer', prev_page
+    -if next_page
+      %span.next
+        =link_to 'Older', next_page
+        &raquo;

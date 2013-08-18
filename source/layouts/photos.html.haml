@@ -1,0 +1,7 @@
+-wrap_layout :fullscreen do
+  %figure 
+    =link_to "/images/gallery/#{current_page.data.photo}" do 
+      =thumbnail "/images/gallery/#{current_page.data.photo}", :large
+    %figcaption=yield
+  %footer
+    %p.center=link_to "Back to photos", "/photos", class:'back-button'

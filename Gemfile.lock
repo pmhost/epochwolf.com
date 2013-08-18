@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/nhemsley/middleman-thumbnailer.git
+  revision: babfa8071a16f68893c915eb8ce5b83c02cbf148
+  branch: master
+  specs:
+    middleman-thumbnailer (0.1.0)
+      middleman (>= 3.0.0)
+      rake
+      rmagick (~> 2.13.0)
+
+GIT
   remote: https://github.com/epochwolf/middleman-blog
   revision: af666ad0dfeb8e3fbcfc42666836893e4265127a
   branch: master
@@ -95,6 +105,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
+    rmagick (2.13.2)
     rouge (0.3.8)
       thor
     sass (3.2.9)
@@ -125,5 +136,6 @@ DEPENDENCIES
   middleman-blog!
   middleman-google-analytics
   middleman-syntax!
+  middleman-thumbnailer!
   nokogiri
   rake

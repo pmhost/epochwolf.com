@@ -28,6 +28,22 @@ activate :blog do |blog|
   blog.page_link = "page/:num"
 end
 
+# Secondary blog for my photos.
+activate :blog do |blog|
+  blog.name = "photos"
+  blog.prefix = "photos"
+  blog.permalink = ":title.html"
+  blog.sources = ":year-:month-:day-:title.html"
+  blog.layout = "photos"
+  blog.default_extension = ".markdown"
+
+  # Disabling pagination, having two blogs with paging seems to cause wierdness. 
+  # Only the main blog needs paging anyway. 
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = "page/:num"
+end
+
 # Secondary blog for my stories. 
 activate :blog do |blog|
   blog.name = "writing"
@@ -133,6 +149,8 @@ activate :automatic_image_sizes
 activate :directory_indexes
 # Code Highlighting
 activate :syntax, line_numbers: true
+require "middleman-thumbnailer"
+activate :thumbnailer, dimensions: { small: '450x', large: '1024x'}, include_data_thumbnails: true
 
 # Fix whitespace issues with pre tags :)
 set :haml, { ugly: true }

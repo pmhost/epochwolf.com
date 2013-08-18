@@ -1,0 +1,10 @@
+---
+title: debug
+---
+%ul
+  -sitemap.resources.each do |resource|
+    %li
+      =resource.path
+      -if resource.respond_to? :blog_data
+        &mdash;
+        BLOG 

@@ -14,6 +14,11 @@ $(function(e){
     $(self.data("hide")).hide();
   });
 
+  $("body").on("click", "a.back-button", function(e){
+    e.preventDefault();
+    window.history.back();
+  })
+
   // Make all external links open in a new window.
   $("a[href^='http://'], a[href^='https://']").attr("target","_blank");
   // Q: Why didn't you do this in your site builder?

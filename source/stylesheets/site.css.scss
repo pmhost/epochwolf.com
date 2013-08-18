@@ -117,6 +117,7 @@ blockquote {
 
 img, figure {
   max-width: 100%; 
+  height: auto;
   &.left{
     float: left;
     padding-right: 0.5em;
@@ -162,6 +163,9 @@ section#main{
       float: left;
     }
   }
+}
+
+section#photos{
 }
 
 article {
@@ -245,6 +249,10 @@ article {
 
 
 // UTILITY CLASSES
+p.center{
+  text-align: center; 
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -340,6 +348,24 @@ div.nsfw {
   }
 }
 
+// FULLSCREEN
+body#fullscreen{
+  #site-header-title, #site-footer{
+    width: 100%;
+  }
+  #site-header-wrapper #site-header-title{
+    width: 100%;
+    padding: 2px 0;
+
+    h1{
+      font-size: 1.5em;
+    }
+    h2{
+      display: none;
+    }
+  }
+}
+
 
 // Original
 
@@ -353,18 +379,37 @@ div.nsfw {
 
 /* In posts */
 
+figure img { 
+  display: block;
+  margin: auto;
+}
+figcaption { 
+  text-align: center; 
+}
 
-figure {
+section#main{
+  figure {
     padding: 5px; 
     border: 1px solid #eee; 
     margin: 2em auto; 
     background-color: #f4f4f4; 
+  }
+  figure.right { 
+    float: right; 
+    margin-left: 2em; 
+    margin-right: 0; 
+    margin-top: 0; 
+    max-width: 50%; 
+  }
+  figure img { 
+    border: 1px solid #ccc; 
+  }
+  figcaption { 
+    text-align: center; 
+    font-size: 0.85em; 
+    color: #555; 
+  }
 }
-    figure.right { float: right; margin-left: 2em; margin-right: 0; margin-top: 0; max-width: 50%; }
-figure img { border: 1px solid #ccc; }
-figcaption { text-align: center; font-size: 0.85em; color: #555; }
-
-
 
 sup, sub {
     padding: 0 0.2em;

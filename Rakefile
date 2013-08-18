@@ -51,6 +51,11 @@ task :preview do
   system "middleman server"
 end
 
+desc "Launches a live preview on localhost:4567" 
+task :verbose do 
+  system "middleman server --verbose"
+end
+
 desc "Check for broken links (requires a preview server to be running)"
 task :test do 
   print "Checking for broken links...\r"
@@ -115,6 +120,18 @@ def create_file(folder, title, options={})
 end
 
 namespace :new do 
+  task :photo do 
+    link  = File.basename(prompt "Url for image", "no-photo.jpg").strip
+    title = prompt "Title for image", "New Image"
+    date = Date.parse(prompt("Date for post", Date.today.strftime("%Y-%m-%d")))
+    tags = prompt "Tags for post (comma separated)"
+
+    filename = create_file "source/photos", title, photo: link, date: date, tags: tags, hours_to_write: 0
+    `subl #{filename}`
+    puts "New image at #{filename}"
+  end
+  task :image => :photo
+
   task :post do 
     title = prompt "Title for post", "New Post"
     date  = Date.parse(prompt("Date for post", Date.today.strftime("%Y-%m-%d")))
