@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/epochwolf/middleman-blog
+  revision: af666ad0dfeb8e3fbcfc42666836893e4265127a
+  branch: master
+  specs:
+    middleman-blog (3.2.0)
+      middleman-core (~> 3.0)
+      middleman-more (~> 3.0)
+      tzinfo (~> 0.3.0)
+
+GIT
   remote: https://github.com/middleman/middleman
   revision: c0192e28491db26d282edf0d61e809e7fb4fb108
   branch: master
@@ -24,16 +34,6 @@ GIT
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.3.6)
     middleman-more (3.1.3)
-
-GIT
-  remote: https://github.com/middleman/middleman-blog
-  revision: c11007def5a553736f04780b52dbd37767194948
-  branch: master
-  specs:
-    middleman-blog (3.2.0)
-      middleman-core (~> 3.0)
-      middleman-more (~> 3.0)
-      tzinfo (~> 0.3.0)
 
 GIT
   remote: https://github.com/middleman/middleman-syntax

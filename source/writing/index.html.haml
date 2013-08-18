@@ -1,5 +1,6 @@
 ---
 title: Writing
+blog: writing
 layout: page
 ---
 
@@ -9,7 +10,7 @@ layout: page
 %p Before you ask, No. I'm not published. At least not yet. Most of my writing is for my own enjoyment. I don't have many stories longer than 2,000 words. A few of them are hosted here.
 %hr
 %ul.unstyled
-  -blog("writing").articles.each do |article|
+  -blog.articles.each do |article|
     %li
     .title
       =blog_link article

@@ -1,10 +1,11 @@
 ---
 title: Blog Archive
+blog: blog
 layout: page
 ---
 
 %ul.unstyled
-  -blog("blog").articles.group_by{|a| a.date.year }.each do |year, articles|
+  -blog.articles.group_by{|a| a.date.year }.each do |year, articles|
     %li
       %strong=year
     -articles.each do |article|
