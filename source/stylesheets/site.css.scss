@@ -152,6 +152,8 @@ section#main{
   margin: auto;
 
   .pager {
+    padding: 1em 0;
+    text-align: center;
     overflow: hidden;
     .next {
       float: right;

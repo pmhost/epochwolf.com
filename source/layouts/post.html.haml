@@ -8,3 +8,12 @@
         ="&sdot;"
         %span.tag-list=tag_list current_page.data.tags
     =yield
+  .pager
+    -if current_page.previous_article
+      %span.prev
+        &laquo;
+        =link_to truncate(current_page.previous_article.title, length: 30), current_page.previous_article
+    -if current_page.next_article
+      %span.next
+        =link_to truncate(current_page.next_article.title, length: 30), current_page.next_article
+        &raquo;
