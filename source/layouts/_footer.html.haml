@@ -7,15 +7,16 @@
 #site-footer-wrapper
   #site-footer
     %nav
-      =link_to "Blog", '/'
-      %span.dot="&loz;"
-      =link_to "Wiki", 'http://ew.vc'
-      %span.dot="&loz;"
-      =link_to "Paste", 'http://sp.ew.vc'
-      %span.dot="&loz;"
       =link_to "Twitter", "http://twitter.com/epochwolf"
       %span.dot="&loz;"
       =link_to "Github", "https://github.com/epochwolf"
+      %span.dot="&loz;"
+      =link_to "Epoch's Wiki", 'http://ew.vc'
+      %span.dot="&loz;"
+      =link_to "Simple Paste", 'http://sp.ew.vc'    
+      -unless build?
+        %span.dot="&loz;"
+        =link_to "Sitemap", '/__middleman/sitemap/'
     %p &copy; 2010 - #{Time.now.year} EpochWolf 
     %p 
       Corrections and comments can be emailed to #{link_to "blog@epochwolf.com"}
