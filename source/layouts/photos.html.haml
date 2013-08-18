@@ -1,38 +1,42 @@
 :ruby
   # Hack to get the page number for the photo list.
+  photos_index = sitemap.find_resource_by_path("photos/index.html")
+  per_page = photos_index.data.per_page.to_i
   page_number = 1
-  back_to_photos_url = "/photos/#"
+
+  # Find the position of the current_page in the article list. 
   blog("photos").articles.each_with_index do |page, index|
     next if page != current_page
-    page_number += index / 10
+    page_number += index / per_page
   end
-  back_to_photos_url = "/photos/page/#{page_number}/#" if page_number != 1
+
+  back_to_photos_url = page_number == 1 ? "/photos/#" : "/photos/page/#{page_number}/#" 
   back_to_photos_url += current_page.data.photo
 
 -wrap_layout :fullscreen do
   .pager
-    -if current_page.previous_article
+    -if previous_article = current_page.previous_article
       %span.prev
         &laquo;
-        =link_to "Previous", current_page.previous_article
+        =link_to previous_article.title, previous_article
     %span
       %strong=current_page.title
-    -if current_page.next_article
+    -if next_article = current_page.next_article
       %span.next
-        =link_to "Next", current_page.next_article
+        =link_to next_article.title, next_article
         &raquo;
   %figure 
     =link_to "/images/gallery/#{current_page.data.photo}" do 
-      =thumbnail "/images/gallery/#{current_page.data.photo}", :large
+      =thumbnail "/images/gallery/#{current_page.data.photo}", :large, width: '1024'
     %figcaption=yield
   .pager
-    -if current_page.previous_article
+    -if previous_article = current_page.previous_article
       %span.prev
         &laquo;
-        =link_to "Previous", current_page.previous_article
-    -if current_page.next_article
+        =link_to previous_article.title, previous_article
+    -if next_article = current_page.next_article
       %span.next
-        =link_to "Next", current_page.next_article
+        =link_to next_article.title, next_article
         &raquo;
   %footer
     %p.center=link_to "Back to photos", back_to_photos_url
