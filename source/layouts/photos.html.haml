@@ -26,8 +26,7 @@
         =link_to next_article.title, next_article
         &raquo;
   %figure 
-    =link_to "/images/gallery/#{current_page.data.photo}" do 
-      =thumbnail "/images/gallery/#{current_page.data.photo}", :large, width: '1024'
+    =image_tag "/images/gallery/#{current_page.data.photo}", width: '1024'
     %figcaption=yield
   .pager
     -if previous_article = current_page.previous_article

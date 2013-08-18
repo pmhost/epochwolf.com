@@ -100,6 +100,7 @@ page "/atom.xml", :layout => false
 
 # Ignore templates, don't want those rendering. 
 ignore 'templates/*'
+#ignore 'images/gallery/*.jpg'
 
 
 # Set up redirects from old versions of my site
@@ -149,8 +150,10 @@ activate :automatic_image_sizes
 activate :directory_indexes
 # Code Highlighting
 activate :syntax, line_numbers: true
+# Thumbnails
 require "middleman-thumbnailer"
-activate :thumbnailer, dimensions: { small: '400x', medium:'900x', large: '2048x'}
+activate :thumbnailer, dimensions: { small: '400x' }, namespace_directory: ["gallery"]
+
 
 # Fix whitespace issues with pre tags :)
 set :haml, { ugly: true }
