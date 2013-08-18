@@ -94,15 +94,17 @@ def create_file(folder, title, options={})
   options.delete(:tags) if options[:tags].empty?
   options[:date] = options[:date].strftime "%Y-%m-%d"
 
+
   slug = options[:title].downcase.gsub(/\W+/, '-')
   filename = File.join folder, "#{options[:date]}-#{slug}.markdown"
+  body_contents = options.delete(:body_contents) || 'TEXT-GOES-HERE'
 
   raise "File exists!" if File.exists? filename
   File.open(filename, 'w') do |io|
     io.puts "---"
     io.puts "link: #{options.delete(:link)}" if options[:link]
     io.puts "title: #{options.delete(:title)}"
-    io.puts "date: #{options.delete(:date)}"
+    #io.puts "date: #{options.delete(:date)}"
     if tags = options.delete(:tags)
       io.puts "tags:"
       tags.each do |tag|
@@ -114,7 +116,7 @@ def create_file(folder, title, options={})
     end
     io.puts "---"
     io.puts ""
-    io.puts 'TEXT-GOES-HERE'
+    io.puts body_contents
   end
   return filename
 end
@@ -123,11 +125,12 @@ namespace :new do
   task :photo do 
     link  = File.basename(prompt "Url for image", "no-photo.jpg").strip
     title = prompt "Title for image", "New Image"
-    date = Date.parse(prompt("Date for post", Date.today.strftime("%Y-%m-%d")))
-    tags = prompt "Tags for post (comma separated)"
+    caption = prompt "Caption for image", "TEXT-GOES-HERE"
+    date = Date.parse(prompt("Date for image", Date.today.strftime("%Y-%m-%d")))
+    tags = prompt "Tags for image (comma separated)"
 
-    filename = create_file "source/photos", title, photo: link, date: date, tags: tags, hours_to_write: 0
-    `subl #{filename}`
+    filename = create_file "source/photos", title, body_contents: caption, photo: link, date: date, tags: tags, hours_to_write: 0
+    # `subl #{filename}`
     puts "New image at #{filename}"
   end
   task :image => :photo

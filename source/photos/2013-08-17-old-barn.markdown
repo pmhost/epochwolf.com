@@ -1,8 +1,0 @@
----
-title: Old Barn
-date: 2013-08-17
-photo: "old-barn.jpg"
-hours_to_write: 0
----
-
-Old barn near Coleman, WI.

@@ -1,0 +1,8 @@
+---
+title: Shalom
+photo: "shalom.jpg"
+date: "2010-12-30"
+hours_to_write: 0
+---
+
+One of my friend's cats.

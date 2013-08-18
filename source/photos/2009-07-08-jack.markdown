@@ -1,0 +1,8 @@
+---
+title: Jack
+photo: "jack.jpg"
+date: "2009-07-08"
+hours_to_write: 0
+---
+
+Jack, my friend's cat. 

@@ -1,0 +1,8 @@
+---
+title: Seattle 2
+photo: "seattle2.jpg"
+date: "2011-07-12"
+hours_to_write: 0
+---
+
+A photo taken in Seattle while I was visiting Pike Place Market with a friend.

@@ -1,0 +1,8 @@
+---
+title: Red Wolf
+photo: "new-zoo-red-wolf.jpg"
+date: "2008-07-18"
+hours_to_write: 0
+---
+
+Red Wolf, taken at the NEW Zoo in Wisconsin
