@@ -1,0 +1,8 @@
+---
+title: Mountian
+photo: "mountian.jpg"
+date: "2013-04-26"
+hours_to_write: 0
+---
+
+Taken from a plane while flying home. 
