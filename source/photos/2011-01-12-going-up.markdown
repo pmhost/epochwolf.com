@@ -3,6 +3,10 @@ title: Going up?
 photo: "uwgb-push-button.jpg"
 date: "2011-01-12"
 hours_to_write: 0
+tags:
+  - uwgb
+  - friends
+  - wisconsin
 ---
 
 My partner in crime during my photo tour on the UWGB campus.

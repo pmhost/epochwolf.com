@@ -3,6 +3,8 @@ title: Cafe
 photo: "cafe.jpg"
 date: "2013-04-08"
 hours_to_write: 0
+tags:
+  - washington
 ---
 
 A photo taken at one of the cafes I frequented in Washington.

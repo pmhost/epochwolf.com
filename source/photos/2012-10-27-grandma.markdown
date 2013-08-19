@@ -3,6 +3,9 @@ title: Grandma
 photo: "grandma.jpg"
 date: "2012-10-27"
 hours_to_write: 0
+tags:
+  - family
+  - florida
 ---
 
 My grandma standing beside a tree in Florida.

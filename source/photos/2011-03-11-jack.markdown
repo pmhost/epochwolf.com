@@ -3,6 +3,10 @@ title: Jack
 photo: "jack2.jpg"
 date: "2011-03-11"
 hours_to_write: 0
+tags:
+  - animals
+  - friends
+  - wisconsin
 ---
 
 One of my friend's cats.

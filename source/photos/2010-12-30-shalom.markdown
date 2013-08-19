@@ -3,6 +3,10 @@ title: Shalom
 photo: "shalom.jpg"
 date: "2010-12-30"
 hours_to_write: 0
+tags:
+  - animals
+  - friends
+  - wisconsin
 ---
 
 One of my friend's cats.

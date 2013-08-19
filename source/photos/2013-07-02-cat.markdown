@@ -3,6 +3,9 @@ title: Cat
 photo: "cat.jpg"
 date: "2013-07-02"
 hours_to_write: 0
+tags:
+  - animals
+  - washington
 ---
 
 A cat I saw when walking to a cafe in Greenwood.

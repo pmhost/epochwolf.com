@@ -3,6 +3,9 @@ title: Bunny
 photo: "bunny.jpg"
 date: "2009-05-10"
 hours_to_write: 0
+tags:
+  - animals
+  - wisconsin
 ---
 
 Bunny sitting next to the bunny trap, mocking us.
