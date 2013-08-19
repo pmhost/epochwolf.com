@@ -1,5 +1,6 @@
 ---
 title: "What is a furry?"
+layout: page
 date: 2013-07-09
 ---
 Well, the best explaination I've found was on yahoo answers.
