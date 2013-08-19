@@ -1,4 +1,8 @@
-# TODO: Copy data from http://epochwolf.com/atom.xml
+---
+layout: false
+---
+base_url = build? ? "http://epochwolf.com/" : "http://localhost:4567/"
+
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.title "Epoch's Photos"
@@ -16,8 +20,8 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.published article.date.to_time.iso8601
       xml.updated article.date.to_time.iso8601
       xml.author { xml.name "epochwolf" }
-      # xml.summary article.summary, "type" => "html"
-      xml.content article.body, "type" => "html"
+      xml.summary article.body, "type" => "html"
+      xml.content "src" => "#{base_url}/images/gallery/#{article.data.photo}", "type"=>"image/jpg"
     end
   end
 end
