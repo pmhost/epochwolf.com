@@ -35,10 +35,12 @@ activate :blog do |blog|
   blog.permalink = ":title.html"
   blog.sources = ":year-:month-:day-:title.html"
   blog.taglink = "tags/:tag.html"
+  blog.year_link = ":year.html"
   blog.layout = "photos"
   blog.default_extension = ".markdown"
 
   blog.tag_template = "photos/tag.html"
+  blog.calendar_template = "photos/calendar.html"
 
   # Disabling pagination, having two blogs with paging seems to cause wierdness. 
   # Only the main blog needs paging anyway. 
