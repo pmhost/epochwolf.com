@@ -21,7 +21,7 @@ From there, all I needed to do was fill it with some the better photos of [lands
 
 [0]: /pages/recommended-reading/
 [1]: /writing/
-[2]: https://github.com/epochwolf/middleman-blog/commit/af666ad0dfeb8e3fbcfc42666836893e4265127a
+[2]: https://github.com/epochwolf/middleman-blog/commit/322f3e303c768280fc025f159626eebbdf16d169
 [3]: http://amzn.to/1cZ6mYv
 [4]: /photos/tags/landscapes/
 [5]: /photos/tags/family/
