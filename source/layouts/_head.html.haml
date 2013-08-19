@@ -4,15 +4,10 @@
 %meta{name: "author",   content: "epochwolf"}
 %meta{name: "viewport", content:"width=device-width, initial-scale=1.0"}
 
-%link{href: "/stylesheets/site.css", rel: "stylesheet", media: "screen"}
-%link{href: "/stylesheets/highlighter.css", rel: "stylesheet", media: "screen"}
-
--if build?
-  %script{src: "/javascripts/jquery.min.js"}
--else
-  %script{src: "/javascripts/jquery.js"}
-
-%script{src: "/javascripts/site.js"}
+=stylesheet_link_tag "site.css"
+=#stylesheet_link_tag "highlighter.css"
+=#javascript_include_tag build? ? 'jquery.min.js' : 'jquery.js'
+=javascript_include_tag "site.js"
 
 %link{href: "/favicon.ico", rel: "icon"}
 %link{href: "/atom.xml", rel: "alternate", title: "Epoch's Blog", type: "application/atom+xml"}

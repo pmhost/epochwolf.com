@@ -1,3 +1,5 @@
+//= require "jquery"
+//= require_self
 
 $(function(e){
   // Handle NSFW and Spoiler templates

@@ -104,6 +104,10 @@ page "/writing/atom.xml", :layout => false
 page "/atom.xml", :layout => false
 
 # Ignore templates, don't want those rendering. 
+if build?
+  ignore 'debug.html'
+end
+ignore 'blog/redirects.html'
 ignore 'templates/*'
 #ignore 'images/gallery/*.jpg'
 
@@ -184,13 +188,13 @@ configure :build do
   end
 
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
   
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
   
   # Enable cache buster
-  # activate :cache_buster
+  activate :cache_buster # asset_hash isn't working, using fallback method.
   
   # Use relative URLs
   # activate :relative_assets
