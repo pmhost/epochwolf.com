@@ -15,6 +15,7 @@ I'm a huge fan of science fiction and fantasy. I'm always reading something in o
 * Writing short fiction
 * Doing research for my writing
 * Watching documentaries
+* Listening to [podcasts](/pages/other-blogs/#podcasts)
 * Working on my [programming projects](/projects/)
 
 Even though these are very solitary hobbies, I still make time to hang out with other people. Tuesday nights, I head to Greenwood and hang out with one of the many writing groups in the area. And I'm always on Freenode's IRC network.
