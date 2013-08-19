@@ -313,6 +313,11 @@ article {
     border: 1px solid #ddd;
   }
 
+  iframe{ // Center youtube videos
+    display:block;
+    margin: auto; 
+  }
+
   .footnotes { 
     margin-top: 3em;
     font-size: 14px;
