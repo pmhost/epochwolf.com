@@ -143,7 +143,7 @@ helpers do
       page: current_page.url,
     }.update options
     active_url = options.delete(:active_if)
-    active = Regexp === active_url ? current_page.path =~ active_url : current_page.url == active_url
+    active = Regexp === active_url ? current_page.url =~ active_url : current_page.url == active_url
     options[:class] += " active" if active
 
     link_to name, url, options
