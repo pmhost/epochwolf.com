@@ -136,6 +136,19 @@ helpers do
     array.map{|tag| link_to tag, "#{prefix}/tags/#{tag}/" }.join ", "
   end
 
+  def nav_link(name, url, options={})
+    options = {
+      class: "",
+      active_if: url,
+      page: current_page.url,
+    }.update options
+    active_url = options.delete(:active_if)
+    active = Regexp === active_url ? current_page.path =~ active_url : current_page.url == active_url
+    options[:class] += " active" if active
+
+    link_to name, url, options
+  end
+
   def blog_link(article)
     if article.data.link
       "#{link_to article.title, article.data.link} <span class=\"external-link\">&raquo;</span>"

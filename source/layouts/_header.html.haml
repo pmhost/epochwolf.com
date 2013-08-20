@@ -4,14 +4,14 @@
       %h1=link_to "EpochWolf", "/"
       %h2 A wolf doing tricks. Like making an awesome website.
   %nav
-    =link_to "Home", '/'
+    =nav_link "Home", '/'
     %span.dot="&loz;"
-    =link_to "Blog", '/blog/'
+    =nav_link "Blog", '/blog/'
     %span.dot="&loz;"
-    =link_to "Projects", '/projects/'
+    =nav_link "Projects", '/projects/'
     %span.dot="&loz;"
-    =link_to "Photos", '/photos/'
+    =nav_link "Photos", '/photos/', active_if: %r{^photos/}
     %span.dot="&loz;"
-    =link_to "Reading", '/pages/recommended-reading/'
+    =nav_link "Reading", '/pages/recommended-reading/'
     %span.dot="&loz;"
-    =link_to "Writing", '/writing/'
+    =nav_link "Writing", '/writing/', active_if: %r{^writing/}

@@ -68,6 +68,10 @@ body{
     padding-right: 0;
     padding-left: 0;
     text-align: center;
+
+    a.active{
+      text-decoration: none;
+    }
   }
 }
 #site-footer{
