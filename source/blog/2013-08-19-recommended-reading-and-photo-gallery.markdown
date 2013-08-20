@@ -1,6 +1,6 @@
 ---
 title: Recommended Reading and Photo Gallery
-date: "2013-08-19"
+date: "2013-08-19 11:00"
 hours_to_write: 0
 tags:
   - blog
