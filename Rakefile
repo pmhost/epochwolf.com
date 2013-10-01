@@ -123,6 +123,7 @@ def create_file(folder, title, options={})
 end
 
 namespace :new do 
+  desc "Add photo to the gallery"
   task :photo do 
     link  = File.basename(prompt "Url for image", "no-photo.jpg").strip
     title = prompt "Title for image", "New Image"
@@ -136,6 +137,7 @@ namespace :new do
   end
   task :image => :photo
 
+  desc "New blog post"
   task :post do 
     title = prompt "Title for post", "New Post"
     date  = Date.parse(prompt("Date for post", Date.today.strftime("%Y-%m-%d")))
@@ -146,6 +148,7 @@ namespace :new do
     puts "New post at #{filename}"
   end
 
+  desc "New blog link post"
   task :link do
     link  = prompt "Link for post", "/404"
     title = prompt "Title for post", "New Post"
@@ -157,6 +160,7 @@ namespace :new do
     puts "New post at #{filename}"
   end
 
+  desc "New story"
   task :story do 
     title = prompt "Title for story", "New Story"
     date  = Date.parse(prompt "Date for story", Date.today.strftime("%Y-%m-%d"))
