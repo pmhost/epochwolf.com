@@ -1,11 +1,12 @@
 ---
 title: Fur Reality 2013
 tags:
+  - fur-reality
   - furries
   - ohio
 photo: "me-iiiix-and-jaru.jpg"
-date: "2013-10-12"
+date: "2013-10-12 15:00"
 hours_to_write: 0
 ---
 
-Me, IiiiX and Jaru
+Me, IiiiX and Jaru after the costume parade.
