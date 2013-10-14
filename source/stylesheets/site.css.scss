@@ -188,6 +188,10 @@ sub {
   top: .5ex; 
 }
 
+abbr {
+  border-bottom: 1px dotted black;
+}
+
 hr{
   border: 0;
   border-top: 1px solid #ddd;
