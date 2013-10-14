@@ -352,6 +352,14 @@ p.center{
   text-align: center; 
 }
 
+p.gray-box{
+  padding: 5px;
+  border: 1px solid #eee;
+  background-color: #f4f4f4;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+
 .inline-block{
   display: inline-block;
 }
