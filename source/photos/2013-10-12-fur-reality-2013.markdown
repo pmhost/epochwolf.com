@@ -3,7 +3,7 @@ title: Fur Reality 2013
 tags:
   - furries
   - ohio
-photo: "me_iiiix_and_jaru.jpg"
+photo: "me-iiiix-and-jaru.jpg"
 date: "2013-10-12"
 hours_to_write: 0
 ---
