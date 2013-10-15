@@ -4,6 +4,10 @@ date: "2013-10-14"
 hours_to_write: 7
 tags:
   - irl
+reviewers:
+  - @sevenseacat
+  - @parndt
+  - @_Rozax_
 ---
 
 <a href="/photos/four-fursuiters/"><img src="/blog/2013/10/14/fur-reality-2013/four-fursuiters.jpg" height="225" width="300" class="right pad-left" alt="Rayles, Kai, Jaru, and IiiiX posing for photos." title="Rayles, Kai, Jaru, and IiiiX posing for photos."></a>
