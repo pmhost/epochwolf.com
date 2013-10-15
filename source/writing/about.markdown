@@ -14,7 +14,7 @@ If you don't know what a furry is, I have an explanation [here](/pages/what-is-a
 
 The Kingdom of Zergon is a small nation constisting of a single city deep in the mountains. To the west there is an ocean and sea ports. The sea ports have poor farming and rely on trade for most of their food supply. To the east is a large kingdom the size of modern Germany. This kingdom is ruled by a king and a Church.
 
-[Index page](/blog/categories/fantasy/)
+[Index page](/blog/tags/fantasy/)
 
 ## Science Fiction Universe
 
@@ -37,10 +37,10 @@ Similar in appearence and size to a Canadian Lynx. Not a member of the Terrian A
 
 Bipedal wolves. Ruled by a committee of 60 clans lend by matriarchs. A small number of the population is telepathic. Not a member of the Terrian Alliance. They have limited spacefaring capablitiy with short ranged FTL. They can be found on their homeworld and some have been exiled to a human colony that the Terrans lost contact with.
 
-[Index page](/blog/categories/fantasy/)
+[Index page](/blog/tags/fantasy/)
 
 ## Furry Universe
 
 I never bothered to define this universe very well. Some versions of it have humans and others don't. The species of furry that can appear vary from story to story.
 
-[Index page](/blog/categories/furry/)
+[Index page](/blog/tags/furry/)
