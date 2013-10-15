@@ -91,7 +91,7 @@ end
 def create_file(folder, title, options={})
   options[:title] = title
   options[:date] ||= Date.today
-  options[:tags] = (options[:tags] || "").split(/\s+,\s+/).map{|s| s.downcase.gsub(/\W+/, '-') }
+  options[:tags] = (options[:tags] || "").split(/,/).map{|s| s.strip.downcase.gsub(/\W+/, '-') }
   options.delete(:tags) if options[:tags].empty?
   options[:date] = options[:date].strftime "%Y-%m-%d"
 
