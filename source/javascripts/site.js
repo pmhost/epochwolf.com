@@ -1,6 +1,7 @@
 //= require "jquery"
-//= require "jquery-ui-1.10.3.custom"
+//= require "bootstrap-tooltips"
 //= require_self
+
 
 $(function(e){
   var body = $("body");
@@ -24,7 +25,7 @@ $(function(e){
     window.history.back();
   })
 
-  body.tooltip();
+  $("img[title], abbr[title], a[title]").tooltip({placement: "bottom", trigger: "click | hover | focus"})
 
   // Make all external links open in a new window.
   $("a[href^='http://'], a[href^='https://']").attr("target","_blank");
