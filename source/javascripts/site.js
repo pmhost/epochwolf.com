@@ -25,7 +25,7 @@ $(function(e){
     window.history.back();
   })
 
-  $("img[title], abbr[title], a[title]").tooltip({placement: "bottom", trigger: "click | hover | focus"})
+  $("img[title], abbr[title], a[title], span[title]").tooltip({placement: "bottom", trigger: "click | hover | focus"})
 
   // Make all external links open in a new window.
   $("a[href^='http://'], a[href^='https://']").attr("target","_blank");
