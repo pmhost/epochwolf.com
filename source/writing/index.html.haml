@@ -11,8 +11,7 @@ layout: page
 %hr
 %ul.unstyled
   -blog.articles.each do |article|
-    %li
-    .title
+    %li.title
       =blog_link article
       -if article.data.layout == "nsfw"
         %span{title: "Story contains mature content."} &dagger;
