@@ -1,0 +1,27 @@
+---
+title: Projects
+layout: page
+blog: projects
+---
+
+%img{src: "/images/drunk-mouse.jpg", height: "215", width: "150", class: "right pad-left hide-phone", alt: "Plush mouse diving into my wine", title: "Bad mouse!"}
+
+%p A selection of programming projects I've done through out the years. 
+
+%hr
+
+-blog.articles.each_with_index do |article, i|
+  -url = article.data.github || article.data.link
+  %h2
+    -if article.data.link
+      =link_to article.title, article
+    -else
+      =article.title
+    -if article.data.github
+      %small #{link_to "github", article.data.github}
+  %p=article.body
+  %hr
+
+%p 
+  ="&dagger;"
+  Discontinued project

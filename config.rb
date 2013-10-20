@@ -67,6 +67,20 @@ activate :blog do |blog|
   blog.paginate = nil 
 end
 
+# Secondary blog for my projects. 
+activate :blog do |blog|
+  blog.name = "projects"
+  blog.prefix = "projects"
+  blog.permalink = ":title.html"
+  blog.sources = ":year-:title.html"
+  blog.layout = "page"
+  blog.summary_separator = /(READMORE)/
+  blog.summary_length = 250
+
+  # Disabling pagination, having two blogs with paging seems to cause wierdness. 
+  # Only the main blog needs paging anyway. 
+  blog.paginate = nil 
+end
 
 
 ### 
