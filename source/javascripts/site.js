@@ -1,25 +1,30 @@
 //= require "jquery"
+//= require "jquery-ui-1.10.3.custom"
 //= require_self
 
 $(function(e){
+  var body = $("body");
+
   // Handle NSFW and Spoiler templates
-  $("body").on("click", "a[data-reveal]", function(e){
+  body.on("click", "a[data-reveal]", function(e){
     e.preventDefault();
     var self = $(this);
     $(self.data("reveal")).show();
   });
   
   // Handle NSFW and Spoiler templates
-  $("body").on("click", "a[data-hide]", function(e){
+  body.on("click", "a[data-hide]", function(e){
     e.preventDefault();
     var self = $(this);
     $(self.data("hide")).hide();
   });
 
-  $("body").on("click", "a.back-button", function(e){
+  body.on("click", "a.back-button", function(e){
     e.preventDefault();
     window.history.back();
   })
+
+  body.tooltip();
 
   // Make all external links open in a new window.
   $("a[href^='http://'], a[href^='https://']").attr("target","_blank");
