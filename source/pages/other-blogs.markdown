@@ -4,8 +4,6 @@ layout: page
 date: 2013-08-19
 ---
 
-# Blogs
-
 With the death of google reader, I don't follow as many blogs as I used to. The blogs I follow either post to twitter or have emails notification of new posts. 
 
 [Evening Edition](http://evening-edition.com/)
