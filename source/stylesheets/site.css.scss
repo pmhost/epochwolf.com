@@ -148,6 +148,13 @@ section.page{
   }
 }
 
+#photos-nav{
+  margin-bottom: 1em;
+  a.active{
+    text-decoration: none;
+  }
+}
+
 // GENERAL STYLING
 
 pre, code {

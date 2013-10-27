@@ -45,7 +45,7 @@ activate :blog do |blog|
   # Disabling pagination, having two blogs with paging seems to cause wierdness. 
   # Only the main blog needs paging anyway. 
   blog.paginate = true
-  blog.per_page = 10
+  blog.per_page = 12
   blog.page_link = "page/:num"
 end
 

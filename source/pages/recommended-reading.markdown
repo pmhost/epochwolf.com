@@ -5,7 +5,7 @@ date: 2013-08-13
 updated_date: 2013-08-13
 ---
 
-<img src="/images/shalom-snuggles.jpg" height="210" width="275" class="right pad-left" alt="Friend of mine reading a book on a couch while snuggling with a long haired cat." title="A friend of mine with another friend's cat.">
+<img src="/images/shalom-snuggles.jpg" height="210" width="275" class="hide-for-small right pad-left" alt="Friend of mine reading a book on a couch while snuggling with a long haired cat." title="A friend of mine with another friend's cat.">
 This is just an abbreviated list of books I liked and I'm not ashamed to admit having read.
 Amazon affiliate links for fun and profit. 
 

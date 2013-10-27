@@ -14,20 +14,29 @@
   back_to_photos_url += current_page.data.photo
 
 -wrap_layout :fullscreen do
+
+  .row
+    .columns.large-12
+      =partial "photos/nav"
   .pager
     -if previous_article = current_page.previous_article
-      %span.prev
+      %span.prev.hide-for-small
         &laquo;
         =link_to previous_article.title, previous_article
     %span
       %strong=current_page.title
     -if next_article = current_page.next_article
-      %span.next
+      %span.next.hide-for-small
         =link_to next_article.title, next_article
         &raquo;
   %figure 
     =image_tag "/images/gallery/#{current_page.data.photo}", width: '1024'
-    %figcaption=yield
+    %figcaption
+      =yield
+      %p.meta
+        =link_to current_page.date.year, "/photos/#{current_page.date.year}/"
+        =", " if current_page.data.tags && !current_page.data.tags.empty?
+        =tag_list current_page.data.tags, "/photos"
   .pager
     -if previous_article = current_page.previous_article
       %span.prev
@@ -37,5 +46,5 @@
       %span.next
         =link_to next_article.title, next_article
         &raquo;
-  %footer
+  %footer.hide-for-small
     %p.center=link_to "Back to photos", back_to_photos_url

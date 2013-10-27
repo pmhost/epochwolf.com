@@ -1,0 +1,8 @@
+%ul.large-block-grid-4.small-block-grid-1
+  -page_articles.each_with_index do |article, i|
+    %li
+      %figure.hortizonal{id: article.data.photo}
+        =link_to article do 
+          =thumbnail "/images/gallery/#{article.data.photo}", :small, width: "200"
+        %figcaption
+          =article.title

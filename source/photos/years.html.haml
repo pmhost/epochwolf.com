@@ -1,21 +1,18 @@
 ---
-title: Tags
+title: All Photo Years
 blog: photos
 ---
 .row
   .columns.large-12
     =partial "photos/nav"
-
     %ul.large-block-grid-4.small-block-grid-1
-      -blog.tags.sort_by{|t| t[0] }.each do |tag_name, articles|
+      -blog.articles.group_by{|a| a.date.year }.sort_by{|t| t[0] }.reverse.each do |year, articles|
         -article = articles.first
         %li
           %figure.hortizonal{id: article.data.photo}
             %figcaption
               %h2
-                =tag_name
+                =year
                 %small #{articles.count} photos
-            =link_to "/photos/tags/#{tag_name}" do 
+            =link_to "/photos/#{year}" do 
               =thumbnail "/images/gallery/#{article.data.photo}", :small, width: "200"
-
-      

@@ -1,0 +1,9 @@
+%nav#photos-nav
+  -if defined?(active) && active
+    =nav_link active, current_page, active_if: //, class:"bold"
+    %span.dot &sdot;
+  =nav_link "All Photos", "/photos/", active_if: %r{^/photos/(page/\d+/)?$}
+  %span.dot &sdot;
+  =nav_link "All Tags", "/photos/tags/"
+  %span.dot &sdot;
+  =nav_link "All Years", "/photos/years/"

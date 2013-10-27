@@ -1,33 +1,21 @@
 ---
 pageable: true
-per_page: 7
+blog: photos
 ---
-%h1 
-  Photos for
-  -case page_type
-  -when 'day'
-    =Date.new(year, month, day).strftime('%b %e %Y')
-  -when 'month'
-    =Date.new(year, month, 1).strftime('%b %Y')
-  -when 'year'
-    =year
+-content_for(:title, "Photos in #{year}")
 
--page_articles.each_with_index do |article, i|
-  %figure.hortizonal{id: article.data.photo}
-    =link_to article do 
-      =thumbnail "/images/gallery/#{article.data.photo}", :small, width: "200"
-    %figcaption
-      %h3=article.title
-      =article.body
+.row
+  .columns.large-12
+    =partial "photos/nav", locals:{active: year}
+    =partial "photos/photos", locals:{page_articles: page_articles}
 
-
--if paginate
-  .pager
-    -if prev_page
-      %span.prev
-        &laquo;
-        =link_to 'Newer', prev_page
-    -if next_page
-      %span.next
-        =link_to 'Older', next_page
-        &raquo;
+    -if paginate
+      .pager
+        -if prev_page
+          %span.prev
+            &laquo;
+            =link_to 'Newer', prev_page
+        -if next_page
+          %span.next
+            =link_to 'Older', next_page
+            &raquo;
