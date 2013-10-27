@@ -1,4 +1,4 @@
-%title=current_page.data.title ? "#{current_page.data.title} - EpochWolf's Blog" : "EpochWolf's Blog" 
+%title=[get_page_title, "EpochWolf's Blog" ].compact.join(" - ")
 %meta{charset: "utf-8"}
 %meta{http_equiv: "X-UA-Compatible", content: "IE=edge;chrome=1"}
 %meta{name: "author",   content: "epochwolf"}

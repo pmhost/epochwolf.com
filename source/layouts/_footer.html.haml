@@ -4,27 +4,23 @@
   project_relative_path = current_page.source_file.gsub(Dir.pwd, "")
   source_url = github_blob_url + project_relative_path
 
-#site-footer-wrapper
-  #site-footer
-    %nav
-      =link_to "Twitter", "http://twitter.com/epochwolf"
-      %span.dot="&loz;"
-      =link_to "Github", "https://github.com/epochwolf"
-      %span.dot="&loz;"
-      =link_to "Epoch's Wiki", 'http://ew.vc'
-      %span.dot="&loz;"
-      =link_to "Please Don't Donate", "/donate/"
-      %span.dot="&loz;"
-      =link_to "Other Blogs", "/pages/other-blogs/"
-      -unless build?
-        %span.dot="&loz;"
-        =link_to "Sitemap", '/__middleman/sitemap/'
-        %span.dot="&loz;"
-        =link_to "Config", "http://localhost:4567/__middleman/config"
-    %p &copy; 2010 - #{Time.now.year} EpochWolf 
-    %p 
-      Corrections and comments can be emailed to #{link_to "blog@epochwolf.com"}
-    %p 
-      #{link_to "Source for this page", source_url}
+#footer-inner
+  %nav
+    =link_to "Donate", "/donate/"
+    %span.dot="&sdot;"
+    =link_to "Twitter", "http://twitter.com/epochwolf"
+    %span.dot="&sdot;"
+    =link_to "Github", "https://github.com/epochwolf"
+    %span.dot="&sdot;"
+    =link_to "Other Blogs", "/pages/other-blogs/"
+    -unless build?
+      %span.dot="&sdot;"
+      =link_to "Sitemap", '/__middleman/sitemap/'
+      %span.dot="&sdot;"
+      =link_to "Config", "http://localhost:4567/__middleman/config"
+  %p All Content and Images &copy; 2010 - #{Time.now.year} EpochWolf
+  %p 
+    Corrections and comments can be emailed to #{link_to "blog@epochwolf.com"}. 
+    Website source code available #{link_to "on github", "https://github.com/epochwolf/epochwolf.com"}. 
 
 =google_analytics_tag

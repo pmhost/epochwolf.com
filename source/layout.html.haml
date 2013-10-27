@@ -3,7 +3,6 @@
   %head
     =partial "layouts/head"
   %body
-    %header=partial "layouts/header"
-    %section#main=yield
-
-    %footer=partial "layouts/footer"
+    %header#site-header=partial "layouts/header"
+    #main=yield
+    %footer#site-footer=partial "layouts/footer"

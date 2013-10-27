@@ -1,19 +1,21 @@
 -wrap_layout :layout do
-  %article{class: current_page.data.link ? "blog link" : "blog"}
-    %header
-      %h1=blog_link current_page
-      %p.meta
-        =dt current_page.date
-        =link_to "&infin;", current_page
-        ="&sdot;"
-        %span.tag-list=tag_list current_page.data.tags
-    =yield
-  .pager
-    -if current_page.previous_article
-      %span.prev
-        &laquo;
-        =link_to truncate(current_page.previous_article.title, length: 30), current_page.previous_article
-    -if current_page.next_article
-      %span.next
-        =link_to truncate(current_page.next_article.title, length: 30), current_page.next_article
-        &raquo;
+  %section.blog.row
+    %article.columns.large-9{class: current_page.data.link ? "blog link" : "blog"}
+      %header
+        %h1=blog_link current_page
+        %p.meta
+          =dt current_page.date
+          =link_to "&infin;", current_page
+          ="&sdot;"
+          %span.tag-list=tag_list current_page.data.tags
+      =yield
+      .pager
+        -if current_page.previous_article
+          %span.prev
+            &laquo;
+            =link_to truncate(current_page.previous_article.title, length: 30), current_page.previous_article
+        -if current_page.next_article
+          %span.next
+            =link_to truncate(current_page.next_article.title, length: 30), current_page.next_article
+            &raquo;
+    %aside.columns.large-3=partial "layouts/blog_sidebar"

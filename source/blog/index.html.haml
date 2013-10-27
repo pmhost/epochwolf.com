@@ -3,28 +3,33 @@ title: Blog
 blog: blog
 pageable: true
 per_page: 10
+layout: layout
 ---
--page_articles.each_with_index do |article, i|
-  -unless 0 == i
-    %div.dot="&loz;"
-  %article{class: article.data.link ? "blog link" : "blog"}
-    %header
-      %h1=blog_link article
-      %p.meta
-        =dt article.date
-        =permalink article
-        ="&sdot;"
-        %span.tag-list=tag_list article.tags
-    =article.body
 
--if paginate
-  .pager
-    -if prev_page
-      %span.prev
-        &laquo;
-        =link_to 'Newer', prev_page
-    %span.archive=link_to "Archive", '/blog/archive/'
-    -if next_page
-      %span.next
-        =link_to 'Older', next_page
-        &raquo;
+%section.blog.row
+  .columns.large-9
+    -page_articles.each_with_index do |article, i|
+      -unless 0 == i
+        %div.dot="&loz;"
+      %article{class: article.data.link ? "blog link" : "blog"}
+        %header
+          %h1=blog_link article
+          %p.meta
+            =dt article.date
+            =permalink article
+            ="&sdot;"
+            %span.tag-list=tag_list article.tags
+        =article.body
+
+    -if paginate
+      .pager
+        -if prev_page
+          %span.prev
+            &laquo;
+            =link_to 'Newer', prev_page
+        -if next_page
+          %span.next
+            =link_to 'Older', next_page
+            &raquo;
+
+  %aside.columns.large-3=partial "layouts/blog_sidebar", locals: {hide_articles: true}

@@ -4,11 +4,10 @@ blog: writing
 layout: page
 ---
 
-
-<img src="/images/parking-garage.jpg" height="300" width="225" class="right pad-left hide-phone" alt="Aisle E of parking garage." title="E... For Effort.">
+%img{src: "/images/parking-garage.jpg", height: "300", width: "225", class: "right pad-left hide-for-small", alt: "Aisle E of parking garage.", title: "E... For Effort."}
 
 %p Before you ask, No. I'm not published. At least not yet. Most of my writing is for my own enjoyment. I don't have many stories longer than 2,000 words. A few of them are hosted here.
-%hr
+
 %ul.unstyled
   -blog.articles.each do |article|
     %li.title

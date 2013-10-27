@@ -1,13 +1,13 @@
 ---
 title: Blog Archive
+pageable: false
 blog: blog
-layout: page
+layout: blog_page
 ---
-
 %ul.unstyled
   -blog.articles.group_by{|a| a.date.year }.each do |year, articles|
     %li
-      %strong=year
+      %h3.bold=year
     -articles.each do |article|
       %li
         %span.datetime-short=article.date.strftime("%b %d")

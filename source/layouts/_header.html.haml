@@ -1,17 +1,13 @@
-#site-header-wrapper
-  #site-header
-    #site-header-title
-      %h1=link_to "EpochWolf", "/"
-      %h2 A wolf doing tricks. Like making an awesome website.
-  %nav
-    =nav_link "Home", '/'
-    %span.dot="&loz;"
-    =nav_link "Blog", '/blog/', active_if: %r{^/blog/}
-    %span.dot="&loz;"
-    =nav_link "Projects", '/projects/'
-    %span.dot="&loz;"
-    =nav_link "Photos", '/photos/', active_if: %r{^/photos/}
-    %span.dot="&loz;"
-    =nav_link "Reading", '/pages/recommended-reading/'
-    %span.dot="&loz;"
-    =nav_link "Writing", '/writing/', active_if: %r{^/writing/}
+#site-title-wrapper
+  #site-title
+    %h1=link_to "Epoch Wolf", "/"
+    %nav#site-nav
+      =nav_link "Home", '/'
+      %span.dot="&sdot;"
+      =nav_link "Blog", '/blog/', active_if: %r{^/blog/}
+      %span.dot="&sdot;"
+      =nav_link "Projects", '/projects/'
+      %span.dot="&sdot;"
+      =nav_link "Photos", '/photos/', active_if: %r{^/photos/}
+      %span.dot="&sdot;"
+      =nav_link "Writing", '/writing/', active_if: %r{^/writing/}

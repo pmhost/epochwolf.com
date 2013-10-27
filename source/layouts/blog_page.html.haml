@@ -1,0 +1,6 @@
+-wrap_layout :layout do
+  %section.blog.row
+    .columns.large-9
+      %h1=get_page_title
+      =yield
+    %aside.columns.large-3=partial "layouts/blog_sidebar", locals: {hide_articles: true}

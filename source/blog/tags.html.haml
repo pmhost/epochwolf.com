@@ -1,8 +1,7 @@
 ---
-title: Tags
+title: All Tags
+layout: blog_page
 ---
-%h1 All Tags
-
 %ul.unstyled
   -blog("blog").tags.sort_by{|t| t[0] }.each do |tag_name, articles|
     %li

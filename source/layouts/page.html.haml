@@ -1,5 +1,6 @@
 -wrap_layout :layout do
-  %article.blog
-    %header
-      %h1=current_page.data.title
-    =yield
+  %section.page
+    %article
+      %header
+        %h1=get_page_title
+      =yield

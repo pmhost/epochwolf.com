@@ -1,16 +1,26 @@
-%aside
-  %h2 Recent Articles
-  %ul
-    -blog.articles[0...10].each do |article|
-      %li
-        =link_to article.title, article
-        %span= article.date.strftime('%b %e')
-  %h2 Tags
-  %ul
-    -blog.tags.each do |tag, articles|
-      %li #{link_to tag, tag_path(tag)} (#{articles.size})
+:ruby 
+  hide_articles ||= false 
+  number_of_articles ||= 7
+%h3.bold Pages
+%ul.unstyled
+  %li=link_to "Recommended Reading", "/pages/recommended-reading/"
+  %li=link_to "My Writing", "/writing/"
+  %li=link_to "Blog Archive", "/blog/archive"
 
-  %h2 By Year
-  %ul
-    -blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-      %li #{link_to year, blog_year_path(year)} (#{articles.size})
+-unless hide_articles
+  %h3.bold Recent Articles
+  %ul.unstyled
+    -blog.articles[0...(number_of_articles)].each do |article|
+      %li
+        %span.gray.nobreak=article.date.strftime('%b %e')
+        =link_to article.title, article
+
+%h3.bold Tags
+%ul.unstyled
+  -blog.tags.each do |tag, articles|
+    %li #{link_to tag, tag_path(tag)} (#{articles.size})
+
+%h3.bold By Year
+%ul.unstyled
+  -blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+    %li #{link_to year, blog_year_path(year)} (#{articles.size})

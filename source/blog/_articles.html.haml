@@ -1,0 +1,12 @@
+%ul.unstyled
+  -page_articles.each do |article|
+    %li
+      %span.datetime-short=article.date.strftime("%b %d")
+      =link_to article.title, article
+      -if article.data.layout == 'nsfw'
+        &dagger;
+      -unless article.tags.length == 0
+        &mdash;
+        =tag_list article.tags, "/blog"
+        
+%p &dagger; Post contains mature content.

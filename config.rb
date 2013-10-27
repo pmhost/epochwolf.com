@@ -14,14 +14,14 @@ activate :blog do |blog|
   blog.layout = "post"
   blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
-  # blog.year_link = ":year.html"
+  blog.year_link = ":year.html"
   # blog.month_link = ":year/:month.html"
   # blog.day_link = ":year/:month/:day.html"
   blog.default_extension = ".markdown"
 
   blog.tag_template = "blog/tag.html"
   # Disable the calendar template, using an archive page instead. 
-  blog.calendar_template = nil # "calendar.html"
+  blog.calendar_template = "blog/calendar.html" # "calendar.html"
 
   blog.paginate = true
   blog.per_page = 10
@@ -159,6 +159,10 @@ helpers do
 
   def permalink(article)
     link_to "&infin;", article, title:"Permalink"
+  end
+
+  def get_page_title
+    yield_content(:title) || current_page.data.title
   end
 end
 

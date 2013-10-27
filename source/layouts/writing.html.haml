@@ -1,5 +1,6 @@
 -wrap_layout :layout do
-  %article.writing
-    %header
-      %h1=link_to current_page.data.title, current_page
-    =yield
+  %section.row
+    %article.writing.columns.large-9
+      %header
+        %h1=link_to current_page.data.title, current_page
+      =yield
