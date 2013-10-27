@@ -6,13 +6,13 @@
 
 #footer-inner
   %nav
-    =link_to "Donate", "/donate/"
-    %span.dot="&sdot;"
     =link_to "Twitter", "http://twitter.com/epochwolf"
     %span.dot="&sdot;"
     =link_to "Github", "https://github.com/epochwolf"
     %span.dot="&sdot;"
     =link_to "Other Blogs", "/pages/other-blogs/"
+    %span.dot="&sdot;"
+    =link_to "Donate", "/donate/"
     -unless build?
       %span.dot="&sdot;"
       =link_to "Sitemap", '/__middleman/sitemap/'
