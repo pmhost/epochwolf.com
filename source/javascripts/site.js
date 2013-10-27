@@ -1,5 +1,7 @@
 //= require "jquery"
-//= require "foundation/index"
+//= require "bootstrap-tooltips"
+//= require "foundation/foundation"
+//= require "foundation/foundation.clearing"
 //= require_self
 
 
@@ -28,7 +30,7 @@ $(function(e){
 
   $(document).foundation();
 
-  //$("img[title], abbr[title], a[title], span[title]").tooltip({placement: "bottom", trigger: "click | hover | focus"})
+  $("img[title], abbr[title], a[title], span[title]").tooltip({placement: "bottom", trigger: "click | hover | focus"})
 
   // Make all external links open in a new window.
   $("a[href^='http://'], a[href^='https://']").attr("target","_blank");

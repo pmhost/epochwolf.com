@@ -1,5 +1,6 @@
 
 //=require_self
+//=require bootstrap-tooltips
 //=require highlighter.css
 
 @import "normalize.scss";
@@ -45,7 +46,6 @@
   "foundation/components/magellan",
   "foundation/components/tables",
   "foundation/components/thumbs",
-  "foundation/components/tooltips",
   "foundation/components/dropdown";
 
 @import "foundation/_overrides";
@@ -139,6 +139,10 @@ body{
 }
 
 // LAYOUT TYPES
+
+article.blog.link header h1{
+  font-size: 1.3em;
+}
 
 section.page{
   @include grid-row;
