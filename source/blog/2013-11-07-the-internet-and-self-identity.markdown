@@ -1,5 +1,5 @@
 ---
-title: The Internet and Self-Identity
+title: Video on The Internet and Self-Identity
 link: https://www.youtube.com/watch?v=-D9Xq3Xr8aE
 tags:
   - youtube
