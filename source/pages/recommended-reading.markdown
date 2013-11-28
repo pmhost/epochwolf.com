@@ -1,6 +1,7 @@
 ---
 title: "Recommended Reading"
 layout: blog_page
+blog: blog
 date: 2013-08-13
 updated_date: 2013-08-13
 ---
