@@ -2,10 +2,10 @@ source "https://rubygems.org"
 
 # Using master branch so I can make use of multiblog. 
 #gem "middleman", "~> 3.1.3"
-gem "middleman", git: 'https://github.com/middleman/middleman', branch: "master"
+gem "middleman"
 #gem "middleman-blog", "~> 3.2.0", 
-gem "middleman-blog", git: 'https://github.com/middleman/middleman-blog', branch: "master"
-gem "middleman-syntax", git: 'https://github.com/middleman/middleman-syntax', branch: "master"
+gem "middleman-blog"
+gem "middleman-syntax"
 gem 'middleman-thumbnailer', git: 'https://github.com/epochwolf/middleman-thumbnailer', branch: "master"
 gem "middleman-google-analytics"
 
