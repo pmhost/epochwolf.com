@@ -1,7 +1,7 @@
 ---
 title: Partner in Crime
 photo: "partner-in-crime.jpg"
-date: "2011-01-12"
+date: "2011-01-12 10:06"
 hours_to_write: 0
 tags:
   - uwgb

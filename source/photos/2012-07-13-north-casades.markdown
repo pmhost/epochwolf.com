@@ -1,7 +1,7 @@
 ---
 title: North Casades
 photo: "north-casades.jpg"
-date: "2012-07-13"
+date: "2012-07-13 10:04"
 hours_to_write: 0
 tags:
   - friends

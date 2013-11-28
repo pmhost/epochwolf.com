@@ -1,7 +1,7 @@
 ---
 title: Student Services Office Notice
 photo: "student-services-notice.jpg"
-date: "2011-01-12"
+date: "2011-01-12 10:08"
 hours_to_write: 0
 tags:
   - uwgb

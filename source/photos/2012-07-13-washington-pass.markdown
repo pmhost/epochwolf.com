@@ -1,7 +1,7 @@
 ---
 title: Washington Pass
 photo: "washington-pass.jpg"
-date: "2012-07-13"
+date: "2012-07-13 10:05"
 hours_to_write: 0
 tags:
   - landscapes

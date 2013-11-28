@@ -1,7 +1,7 @@
 ---
 title: Prairie Dog
 photo: "new-zoo-prairie-dog.jpg"
-date: "2008-07-18"
+date: "2008-07-18 10:04"
 hours_to_write: 0
 tags: 
   - new-zoo

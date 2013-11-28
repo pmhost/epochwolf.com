@@ -1,7 +1,7 @@
 ---
 title: Shalom Snuggles
 photo: "shalom-snuggles.jpg"
-date: "2011-03-11"
+date: "2011-03-11 10:01"
 hours_to_write: 0
 tags:
   - animals

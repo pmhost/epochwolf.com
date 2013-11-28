@@ -1,7 +1,7 @@
 ---
 title: My Parents
 photo: "parents.jpg"
-date: "2008-06-15"
+date: "2008-06-15 10:01"
 hours_to_write: 0
 tags:
   - family

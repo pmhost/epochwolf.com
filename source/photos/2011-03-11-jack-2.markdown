@@ -1,7 +1,7 @@
 ---
 title: Jack 2
 photo: "jack3.jpg"
-date: "2011-03-11"
+date: "2011-03-11 10:10"
 hours_to_write: 0
 tags:
   - animals

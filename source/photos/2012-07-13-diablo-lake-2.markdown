@@ -1,7 +1,7 @@
 ---
 title: Diablo Lake Dam 2
 photo: "diablo-lake-2.jpg"
-date: "2012-07-13"
+date: "2012-07-13 10:01"
 hours_to_write: 0
 tags:
   - landscapes

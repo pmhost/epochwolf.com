@@ -1,7 +1,7 @@
 ---
 title: Fox at Homosassa Springs
 photo: "homosassa_springs_5.jpg"
-date: "2008-03-18"
+date: "2008-03-18 13:05"
 hours_to_write: 0
 tags:
   - animals

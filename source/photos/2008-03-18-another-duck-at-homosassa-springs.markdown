@@ -1,7 +1,7 @@
 ---
 title: Another Duck at Homosassa Springs
 photo: "homosassa_springs_3.jpg"
-date: "2008-03-18"
+date: "2008-03-18 13:01"
 hours_to_write: 0
 tags:
   - animals

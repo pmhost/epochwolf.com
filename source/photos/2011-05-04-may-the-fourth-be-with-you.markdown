@@ -1,7 +1,7 @@
 ---
 title: May The Fourth Be With You
 photo: "may-the-fourth.jpg"
-date: "2011-05-04"
+date: "2011-05-04 10:10"
 hours_to_write: 0
 tags:
   - friends

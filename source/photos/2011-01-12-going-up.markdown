@@ -1,7 +1,7 @@
 ---
 title: Going up?
 photo: "uwgb-push-button.jpg"
-date: "2011-01-12"
+date: "2011-01-12 10:04"
 hours_to_write: 0
 tags:
   - uwgb

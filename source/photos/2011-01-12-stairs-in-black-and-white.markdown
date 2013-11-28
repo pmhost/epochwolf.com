@@ -1,7 +1,7 @@
 ---
 title: Stairs in Black and White
 photo: "uwgb-stairs-bw.jpg"
-date: "2011-01-12"
+date: "2011-01-12 10:07"
 hours_to_write: 0
 tags:
   - uwgb

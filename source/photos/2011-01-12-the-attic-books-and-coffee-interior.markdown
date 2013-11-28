@@ -1,7 +1,7 @@
 ---
 title: The Attic Books and Coffee Interior
 photo: "the-attic-2.jpg"
-date: "2011-01-12"
+date: "2011-01-12 10:09"
 hours_to_write: 0
 tags:
   - friends
