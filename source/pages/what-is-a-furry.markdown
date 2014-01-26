@@ -3,7 +3,8 @@ title: "What is a furry?"
 layout: page
 date: 2013-07-09
 ---
-Well, the best explaination I've found was on yahoo answers.
+
+Well, the best explanation I've found was on yahoo answers.
 
 > First of all you can find lots of information on wikipedia about this topic and its very accurate. defining a single person as a furry will change with each person you meet. there are different levels and scales of "Furriness" there are many different offshoots as well so ppl that that judge all furries the same are unjust.
 > 
@@ -28,5 +29,3 @@ Well, the best explaination I've found was on yahoo answers.
 >
 > **~Kal~** -- [What is a furry, or person who considers themselves a furry?](http://answers.yahoo.com/question/index?qid=20081129225436AA60h8M)
 > {: .cite}
-
-If you want to know, I don't consider myself a furry. I don't think writing about furries makes me a furry anymore than writing about wizards makes me capable of casting fireballs. 
