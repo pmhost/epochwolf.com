@@ -1,0 +1,11 @@
+---
+title: Kenson
+tags:
+  - furries
+  - ohio
+photo: "kenson.jpg"
+date: "2013-12-18 18:20"
+hours_to_write: 0
+---
+
+Kenson was fun. He was dancing to the music inbetween bowling. 
