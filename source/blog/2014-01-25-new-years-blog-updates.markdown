@@ -2,6 +2,7 @@
 title: New Years Blog Updates
 tags:
   - irl
+  - blog
 date: "2014-01-25"
 hours_to_write: 0
 ---
