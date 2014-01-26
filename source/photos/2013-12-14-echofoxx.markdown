@@ -1,0 +1,11 @@
+---
+title: Echofoxx
+tags:
+  - furry
+  - ohio
+photo: "echofoxx.jpg"
+date: "2013-12-14 22:10"
+hours_to_write: 0
+---
+
+One of the staff of Fur Reality and Fur Reality Holiday Hijinks.

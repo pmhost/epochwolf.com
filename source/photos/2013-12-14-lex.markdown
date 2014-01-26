@@ -1,0 +1,11 @@
+---
+title: Lex
+tags:
+  - furry
+  - ohio
+photo: "lex.jpg"
+date: "2013-12-14 22:00"
+hours_to_write: 0
+---
+
+Lex is a cool guy.
