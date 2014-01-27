@@ -11,8 +11,6 @@ You must bring a photo id\* for age verification and pay your share in full and 
 
 Your share reserves the space for you whether you use it or not. If you do not use the hotel room one night, you will not be refunded.  If either of us wish to terminate the agreement, you will be refunded minus the nights you had your space reserved and any charges incurred.  
 
-Room Rules
-
 # Rules 
 
 These are not up for negotiation.
