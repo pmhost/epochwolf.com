@@ -7,7 +7,7 @@ This agreement is meant to set some rules and guidelines so everyone using the r
 
 The room will be in my name. I am fronting the money for the hotel room and taking the majority of the risk. 
 
-You must bring a photo id\* for age verification and pay your share in full and in cash before receiving a room key or putting anything in the room. 
+You must bring a photo id\* for age verification, pay your share in full with the agreed method of payment, and sign a roomshare agreement before receiving a room key or putting anything in the room. 
 
 Your share reserves the space for you whether you use it or not. If you do not use the hotel room one night, you will not be refunded.  If either of us wish to terminate the agreement, you will be refunded minus the nights you had your space reserved and any charges incurred.  
 
@@ -21,9 +21,9 @@ These are not up for negotiation.
 4. No sex in the room, period. 
 5. Clothing is not optional. At a minimum you must wear undergarments unless you’re in the bathroom. 
 6. You must shower or bathe at least once every 24 hours. 
-7. No one is allowed to stay the night in the room without payment. 
+7. No one is allowed to stay the night in the room without payment and a signed roomshare agreement. 
 8. No charges to the hotel room.
-9. No sharing your hotel key without explicit permission from myself. 
+9. No sharing or giving away your hotel key without explicit permission from myself. 
 
 # Guidelines
 
